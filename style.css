@@ -1,0 +1,393 @@
+  /* Apply Poppins font globally */
+  body,
+  .nav-link,
+  .navbar-brand {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      /* Light font weight */
+  }
+  .navbar {
+    position: sticky;
+    top: 0; /* Stick to the top of the page */
+    z-index: 1020; /* Ensure it stays above other elements */
+    background-color: #f0f0f0; /* Keep your background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+  .navbar.bg-light {
+    background-color: #defbde !important;
+}
+
+  /* Hover effect for nav links */
+  .nav-link {
+      transition: color 0.3s ease, background-color 0.3s ease;
+      padding: 8px 10px;
+  }
+
+  .nav-link:hover {
+      color: white !important;
+      background-color: #3cb371 !important;
+      /* Parrot green */
+      border-radius: 5px;
+  }
+
+  /* Navbar alignment */
+  .navbar-nav {
+      margin-left: auto;
+      /* Push links to the right */
+  }
+
+  /* Slider Section */
+  .carousel-item {
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+  }
+
+  /* Black overlay */
+  .carousel-item::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      /* Black overlay */
+      z-index: 1;
+  }
+
+  /* Slide Content */
+  .carousel-caption {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      z-index: 2;
+      text-align: left;
+  }
+
+  .carousel-caption h1 {
+      font-weight: 700;
+      /* Bold */
+      font-size: 3rem;
+      color: white;
+  }
+
+  .carousel-caption p {
+      font-weight: 300;
+      /* Light */
+      font-size: 1.2rem;
+      color: white;
+      margin: 10px 0;
+  }
+
+  /* Rent Now Button */
+  .btn-rent {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: white;
+      background-color: #3cb371;
+      /* Parrot green */
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .btn-rent:hover {
+      background-color: #2e8b57;
+      /* Darker green */
+      transform: scale(1.05);
+  }
+
+  /* Indicators Styling */
+  .carousel-indicators [data-bs-target] {
+      background-color: white;
+  }
+
+  /* How Freebrella Works Section */
+  .how-it-works-section {
+      background-color: #f8f9fa;
+      /* Light background for contrast */
+      font-family: 'Poppins', sans-serif;
+  }
+
+  .section-title {
+      font-size: 32px;
+      font-weight: bold;
+      color: #4CAF50;
+      /* Green theme color */
+  }
+
+  .how-it-works-steps {
+      list-style-type: decimal;
+      margin-left: 20px;
+      color: #555;
+      /* Subtle text color */
+      font-size: 16px;
+      line-height: 1.8;
+  }
+
+  .how-it-works-steps strong {
+      color: #4CAF50;
+      /* Green theme for steps */
+  }
+
+  .how-it-works-heading {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 15px;
+  }
+
+  .how-it-works-section p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #555;
+  }
+
+
+  .about-section {
+      padding: 80px 0;
+      background-color: #f8f9fa;
+  }
+
+  .about-heading {
+      font-weight: bold;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+  }
+
+  .nav-tabs {
+      border: none;
+      margin-bottom: 30px;
+  }
+
+  .nav-tabs .nav-link {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #000;
+      border: none;
+      transition: color 0.3s;
+  }
+
+  .nav-tabs .nav-link:hover,
+  .nav-tabs .nav-link.active {
+      color: #007bff;
+      border-color: #007bff;
+  }
+
+  .tab-content {
+      margin-top: 30px;
+  }
+
+  .tab-pane {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .about-tab-text {
+      max-width: 500px;
+  }
+
+  .about-tab-text h4 {
+      font-weight: bold;
+      font-size: 2rem;
+      margin-bottom: 20px;
+  }
+
+  .about-tab-text p {
+      font-size: 1.1rem;
+      color: #555;
+  }
+
+  .about-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: opacity 0.3s ease;
+  }
+
+  html {
+      scroll-behavior: smooth;
+  }
+
+  /* Contact Section Styling */
+  .contact-section {
+      background-color: #f7f7f7;
+  }
+
+  .contact-heading {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      color: #2d2d2d;
+      margin-bottom: 20px;
+  }
+
+  .contact-form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-label {
+      font-weight: 600;
+  }
+
+  textarea.form-control {
+      height: 150px;
+  }
+
+  .btn-primary {
+      background-color: #28a745;
+      border-color: #28a745;
+  }
+
+  .btn-primary:hover {
+      background-color: #218838;
+      border-color: #1e7e34;
+  }
+
+  /* Google Map Styling */
+  .map-container {
+      position: relative;
+      height: 300px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .map-container iframe {
+      border: 0;
+  }
+
+  /* Contact Information Section Styling */
+  .contact-info {
+      margin-top: 30px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-info h3 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      color: #2d2d2d;
+  }
+
+  .contact-info p {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      color: #555;
+      font-size: 16px;
+  }
+
+  .contact-info strong {
+      color: #28a745;
+  }
+
+  /* Contact Query Section */
+  .contact-query {
+      margin-top: 30px;
+      font-family: 'Poppins', sans-serif;
+  }
+
+  .contact-query h4 {
+      font-weight: 600;
+      color: #333;
+  }
+
+  .contact-query p {
+      font-weight: 400;
+      color: #555;
+  }
+
+  /* Footer Styles */
+  .footer {
+      background-color: #222;
+      /* Dark Black Background */
+      color: #fff;
+      /* White Text */
+      padding: 40px 0;
+      font-family: 'Poppins', sans-serif;
+  }
+
+  .footer-logo img {
+      margin-bottom: 10px;
+  }
+
+  .footer-description {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #bbb;
+      /* Lighter text for description */
+  }
+
+  .footer-heading {
+      font-size: 18px;
+      margin-bottom: 15px;
+      font-weight: bold;
+  }
+
+  .footer-links,
+  .footer-contact {
+      list-style-type: none;
+      padding-left: 0;
+  }
+
+  .footer-links li,
+  .footer-contact li {
+      margin-bottom: 10px;
+  }
+
+  .footer-links a,
+  .footer-contact i {
+      color: #bbb;
+      /* Lighter color for links and icons */
+      text-decoration: none;
+  }
+
+  .footer-links a:hover {
+      color: #4CAF50;
+      /* Green color on hover */
+  }
+
+  .footer-contact i {
+      margin-right: 10px;
+  }
+
+  /* Footer Bottom */
+  .footer-bottom {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+  }
+
+  .footer-socials a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 20px;
+      text-decoration: none;
+  }
+
+  .footer-socials a:hover {
+      color: #4CAF50;
+      /* Green color for social icons on hover */
+  }
+
+  @media (max-width: 767px) {
+      .footer .row {
+          text-align: center;
+      }
+
+      .footer-bottom {
+          margin-top: 20px;
+      }
+  }
+
+  

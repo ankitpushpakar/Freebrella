@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freebrella</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-light">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="Freebrella Logo" height="40">
+            </a>
+            <!-- Hamburger button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rentnow.html">Rent Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="log.html">Login/Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
+                aria-current="true"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1"></button>
+        </div>
+
+        <!-- Slides -->
+        <div id="home" class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active" style="background-image: url('devin-berko-YqYjojt4CKo-unsplash.jpg');">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Welcome to Freebrella</h1>
+                        <p>Rent umbrellas for free, hassle-free and convenient.</p>
+                        <a href="rentnow.html" target="_blank">
+                            <button class="btn-rent">Rent Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item" style="background-image: url('umbrellas-1281751_1920.jpg');">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Your Free Umbrella Awaits</h1>
+                        <p>Enjoy the shade or shelter wherever you are.</p>
+                        <a href="rentnow.html" target="_blank">
+                            <button class="btn-rent">Rent Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </section>
+    <!-- How Freebrella Works Section -->
+    <section id="how-it-works" class="how-it-works-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">How Freebrella Works</h2>
+            <div class="row">
+                <!-- Left Column: Steps -->
+                <div class="col-md-6">
+                    <ol class="how-it-works-steps">
+                        <li>
+                            <strong>Step 1:</strong> Visit our kiosk and locate the QR code displayed at the front.
+                        </li>
+                        <li>
+                            <strong>Step 2:</strong> Scan the QR code with your smartphone to be redirected to our
+                            website.
+                        </li>
+                        <li>
+                            <strong>Step 3:</strong> Pay the refundable security deposit of ₹299 to rent an umbrella
+                            with a unique ID.
+                        </li>
+                        <li>
+                            <strong>Step 4:</strong> Use the umbrella and return it to the kiosk within 24 hours in good
+                            condition to get a full refund.
+                        </li>
+                        <li>
+                            <strong>Step 5:</strong> If the umbrella is not returned within 24 hours, the security
+                            deposit will not be refunded.
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- Right Column: Revenue Model -->
+                <div class="col-md-6">
+                    <h3 class="how-it-works-heading">Our Revenue Model</h3>
+                    <p>
+                        At Freebrella, we generate revenue through innovative advertising on our umbrellas.
+                        Each umbrella serves as a moving billboard, capturing attention across the city.
+                        Brands can showcase their advertisements on our umbrellas, gaining visibility as people use
+                        them.
+                    </p>
+                    <p>
+                        This strategy enables us to fund maintenance and expansion of kiosks while providing customers
+                        with free umbrella rentals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <!-- Left Side: Tabs and Content -->
+                <div class="col-md-6">
+                    <h2 class="about-heading">About Us</h2>
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" id="aboutTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="founder-tab" data-bs-toggle="tab" href="#founder" role="tab"
+                                aria-controls="founder" aria-selected="true">Founder</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="mission-tab" data-bs-toggle="tab" href="#mission" role="tab"
+                                aria-controls="mission" aria-selected="false">Our Mission</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="vision-tab" data-bs-toggle="tab" href="#vision" role="tab"
+                                aria-controls="vision" aria-selected="false">Our Vision</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab content -->
+                    <div class="tab-content" id="aboutTabContent">
+                        <!-- Founder Tab -->
+                        <div class="tab-pane fade show active" id="founder" role="tabpanel"
+                            aria-labelledby="founder-tab">
+                            <div class="about-tab-text">
+                                <h4>Our Founder</h4>
+                                <p>Freebrella was founded by Ankit Pushpakar, a visionary dedicated to promoting
+                                    sustainability and community connection. With a background in Software Developer and
+                                    Cyber Security Analyst, he recognized the need for an accessible solution to
+                                    unexpected rain. Inspired by the sharing economy, Ankit created Freebrella to
+                                    provide free umbrella rentals, encouraging resource sharing and reducing waste.
+                                    Through this platform, he aims to empower individuals to stay dry and protected from
+                                    sun rays while fostering a more eco-friendly lifestyle.</p>
+                            </div>
+                        </div>
+
+                        <!-- Our Mission Tab -->
+                        <div class="tab-pane fade" id="mission" role="tabpanel" aria-labelledby="mission-tab">
+                            <div class="about-tab-text">
+                                <h4>Our Mission</h4>
+                                <p>At Freebrella, our mission is to provide a hassle-free, sustainable solution for
+                                    staying dry during unexpected rain. We strive to make quality umbrellas accessible
+                                    to everyone, promoting a culture of sharing and reducing waste in our communities
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Our Vision Tab -->
+                        <div class="tab-pane fade" id="vision" role="tabpanel" aria-labelledby="vision-tab">
+                            <div class="about-tab-text">
+                                <h4>Our Vision</h4>
+                                <p>Our vision is to create a world where umbrella rentals are the norm, empowering
+                                    individuals to embrace the elements without the burden of ownership. We aim to
+                                    expand our reach globally, fostering community connections and environmental
+                                    consciousness through innovative sharing solutions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Images -->
+                <div class="col-md-6">
+                    <div class="tab-content" id="aboutTabImageContent">
+                        <!-- Founder Image -->
+                        <div class="tab-pane fade show active" id="founder-image" role="tabpanel"
+                            aria-labelledby="founder-tab">
+                            <div class="about-image">
+                                <img src="founder.jpg" alt="Founder Image">
+                            </div>
+                        </div>
+
+                        <!-- Mission Image -->
+                        <div class="tab-pane fade" id="mission-image" role="tabpanel" aria-labelledby="mission-tab">
+                            <div class="about-image">
+                                <img src="mission.jpg" alt="Mission Image">
+                            </div>
+                        </div>
+
+                        <!-- Vision Image -->
+                        <div class="tab-pane fade" id="vision-image" role="tabpanel" aria-labelledby="vision-tab">
+                            <div class="about-image">
+                                <img src="vision.jpg" alt="Vision Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Left Side: Contact Form -->
+                <div class="col-md-6">
+                    <h2 class="contact-heading">Contact Us</h2>
+                    <form action="submit_form.php" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your full name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="Your email address" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="text" class="form-control" id="phone" name="phone"
+                                placeholder="Your phone number" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="4"
+                                placeholder="Your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Right Side: Google Map -->
+                <div class="col-md-6">
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4159343.8248753175!2d76.59174048032025!3d27.014865118148805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399acd266d67889f%3A0xfa01fdf0581e5261!2sShambhunath%20College%20of%20Education%20(BBA%2C%20BCA)!5e0!3m2!1sen!2sin!4v1732874672824!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <!-- Contact Information Section -->
+                    <div class="contact-info mt-4">
+                        <h3>Contact Information</h3>
+                        <p><strong>Phone:</strong> +91 9076999437 </p>
+                        <p><strong>Email:</strong> ankitpushpakar5678@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Query Section -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h4>Got Any Questions? We're Here to Help!</h4>
+                    <p>If you have any queries regarding our services, feel free to reach out to us through the form
+                        above or call us directly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Column 1: Logo & Description -->
+                <div class="col-md-4">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Freebrella Logo" height="40">
+                    </div>
+                    <p class="footer-description">
+                        Freebrella provides free umbrella rentals for those unexpected rainy days. Join our mission to
+                        share, reduce waste, and make life a little more convenient.
+                    </p>
+                </div>
+
+                <!-- Footer Column 2: Quick Links -->
+                <div class="col-md-4">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#rent">Rent Now</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Column 3: Contact Info -->
+                <div class="col-md-4">
+                    <h5 class="footer-heading">Contact Information</h5>
+                    <ul class="footer-contact">
+                        <li><i class="bi bi-telephone-fill"></i> +91 9076999437</li>
+                        <li><i class="bi bi-envelope-fill"></i> ankitpushpakar5678@gmail.com</li>
+                        <li><i class="bi bi-geo-alt-fill"></i> Prayagraj, Uttar Pradesh, 211001</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom: Social Media Links -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Freebrella. All rights reserved.</p>
+                <div class="footer-socials">
+                    <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Signup</title>
+
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS for Styling -->
+    <link rel="stylesheet" href="log.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <!-- Toggle Button (Login/Signup) -->
+            <div class="form-toggle">
+                <button id="loginBtn" class="active" onclick="toggleForm('login')">Login</button>
+                <button id="signupBtn" onclick="toggleForm('signup')">Signup</button>
+            </div>
+
+            <!-- Login Form -->
+            <form id="loginForm" class="form-content">
+                <h2>Login</h2>
+                <div class="input-field">
+                    <label for="loginMobile">Mobile Number</label>
+                    <input type="tel" id="loginMobile" placeholder="Enter your mobile number" pattern="[0-9]{10}" required>
+                </div>
+                <div class="input-field">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+                <p>Don't have an account? <a href="#" id="showSignupLink">Signup</a></p>
+            </form>
+
+            <!-- Signup Form -->
+            <form id="signupForm" class="form-content">
+                <h2>Signup</h2>
+                <div class="input-field">
+                    <label for="signupName">Name</label>
+                    <input type="text" id="signupName" placeholder="Enter your name" required>
+                </div>
+                <div class="input-field">
+                    <label for="signupMobile">Mobile Number</label>
+                    <input type="tel" id="signupMobile" placeholder="Enter your mobile number" pattern="[0-9]{10}" required>
+                </div>
+                <div class="input-field">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="submit-btn">Signup</button>
+                <p>Already have an account? <a href="#" id="showLoginLink">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="log.js"></script>
+</body>
+</html>
